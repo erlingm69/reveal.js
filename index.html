@@ -29,9 +29,6 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 		<script>
-			launchFullscreen(document.documentElement);
-		</script>
-		<script>
 			function launchFullscreen(element) {
 			  if(element.requestFullScreen) {
 			    element.requestFullScreen();
@@ -51,6 +48,8 @@
 			    document.webkitCancelFullScreen();
 			  }
 			}
+			
+			launchFullscreen(document.documentElement);
 		</script>		
 	</head>
 
