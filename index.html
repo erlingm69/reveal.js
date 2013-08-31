@@ -85,7 +85,7 @@
 					<input type='text' id='youTubeSearch' value='' onkeypress="youTubeKeyFunction"/>
 					
 					<script>
-						function handle(e){
+						function handle(youTubeKeyFunction){
 							if(e.keyCode === 13){
 								window.open("http://www.youtube.com/results?search_query="+youTubeSearch.value,"_self");
 							}
