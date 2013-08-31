@@ -53,7 +53,9 @@
 							function netflixKidsFunction(e){
 								if(e.keyCode === 13){
 									window.open("http://movies.netflix.com/KidsSearch?raw_query=" +
-										encodeURI(netflixKidsSearch.value),"_self");
+										encodeURI(netflixKidsSearch.value) +
+										"&ac_category_type=none&ac_rel_posn=-1&ac_abs_posn=-1&v1="
+										encodeURI(netflixKidsSearch.value) + "&search_submit=","_self");
 								}
 								return false;
 							}
