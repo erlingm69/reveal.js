@@ -46,6 +46,18 @@
 						<a href="http://movies.netflix.com/Kids">
 							<img width="500" height="341" src="http://www.viralblog.com/wp-content/uploads/2013/02/Netflix_Just_For_Kids_Update-500x341.jpeg" alt="Netflix barn">
 						</a>
+						<br>
+						<input type='text' id='netflixKidsSearch' value='' onkeypress="netflixKidsFunction(event)"/>
+						
+						<script>
+							function netflixKidsFunction(e){
+								if(e.keyCode === 13){
+									window.open("http://movies.netflix.com/KidsSearch?raw_query=" +
+										encodeURI(netflixKidsSearch.value),"_self");
+								}
+								return false;
+							}
+						</script>						
 					</section>
 					<section>
 						<h2>Netflix</h2>
