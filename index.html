@@ -87,7 +87,7 @@
 				<section>
 					<section>
 						<h2>SVT Play barn</h2>
-						<a href="http://www.tv4play.se/barn">
+						<a href="http://www.svtplay.se/kategorier/barn">
 							<img width="400" height="224" src="http://www.svtplay.se/public/2013.36/images/svt-play-2x.png" alt="SVT Play barn">
 						</a>
 						<br>
@@ -107,7 +107,7 @@
 					</section>
 					<section>
 						<h2>SVT Play</h2>
-						<a href="http://www.tv4play.se">
+						<a href="http://www.svtplay.se">
 							<img width="400" height="224" src="http://www.svtplay.se/public/2013.36/images/svt-play-2x.png" alt="SVT Play">
 						</a>
 						<br>
@@ -115,6 +115,24 @@
 					</section>
 					<section>
 						<h2>TV4 Play</h2>
+						
+						<a href="http://www.tv4play.se">
+							<img width="400" height="224" src="http://images1.wikia.nocookie.net/__cb20100305140436/logopedia/images/thumb/3/31/TV4_Play.svg/541px-TV4_Play.svg" alt="SVT Play barn">
+						</a>
+						<br>
+						<input type='text' id='tv4PlaySearch' value='' onkeypress="tv4PlayFunction(event)"/>
+						
+						<script>
+							function tv4PlayFunction(e){
+								if(e.keyCode === 13){
+									window.open("http://www.tv4play.se/s%C3%B6k?utf8=%E2%9C%93&q=" +
+										encodeURI(tv4PlaySearch.value),
+										"_self");
+								}
+								return false;
+							}
+						</script>						
+						
 					</section>
 					<section>
 						<h2>TV3 Play</h2>
