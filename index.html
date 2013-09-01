@@ -76,12 +76,26 @@
 						<a href="http://www.tv4play.se/barn">
 							<img width="400" height="224" src="http://www.svtplay.se/public/2013.36/images/svt-play-2x.png" alt="SVT Play barn">
 						</a>
+						<input type='text' id='SvtPlayBarnSearch' value='' onkeypress="svtPlayFunction(event)"/>
+						
+						<script>
+							function svtPlayFunction(e){
+								if(e.keyCode === 13){
+									window.open("http://www.svtplay.se/sok?" +
+										encodeURI(SvtPlayBarnSearch.value),
+										"_self");
+								}
+								return false;
+							}
+						</script>						
+						
 					</section>
 					<section>
 						<h2>SVT Play</h2>
 						<a href="http://www.tv4play.se">
 							<img width="400" height="224" src="http://www.svtplay.se/public/2013.36/images/svt-play-2x.png" alt="SVT Play">
 						</a>
+						<input type='text' id='SvtPlaySearch' value='' onkeypress="svtPlayFunction(event)"/>
 					</section>
 					<section>
 						<h2>TV4 Play</h2>
